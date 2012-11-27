@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.sun.xml.bind</groupId>
+  <artifactId>jaxb-impl</artifactId>
+  <versioning>
+    <release>2.2.6-facets</release>
+    <versions>
+      <version>2.2.6-facets</version>
+    </versions>
+    <lastUpdated>20121127001552</lastUpdated>
+  </versioning>
+</metadata>
