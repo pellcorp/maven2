@@ -6,5 +6,10 @@
       <prefix>cobertura</prefix>
       <artifactId>cobertura-maven-plugin</artifactId>
     </plugin>
+    <plugin>
+      <name>Mojo's Maven Plugin for NSIS</name>
+      <prefix>nsis</prefix>
+      <artifactId>nsis-maven-plugin</artifactId>
+    </plugin>
   </plugins>
 </metadata>
