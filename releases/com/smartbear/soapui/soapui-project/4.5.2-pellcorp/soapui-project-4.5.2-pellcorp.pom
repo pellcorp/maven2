@@ -13,7 +13,7 @@
         <repository>
             <id>eviware</id>
             <name>Eviware Maven2 Repository</name>
-            <url>http://www.soapui.org/repository/maven2</url>
+            <url>http://localhost/html/soapui/</url>
         </repository>
         <repository>
             <id>central</id>
@@ -25,6 +25,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<maven.compiler.source>1.6</maven.compiler.source>
+		<maven.compiler.target>1.6</maven.compiler.target>
 
         <!-- Custom properties -->
         <assembly.build.directory>${project.build.directory}/assemblies</assembly.build.directory>
