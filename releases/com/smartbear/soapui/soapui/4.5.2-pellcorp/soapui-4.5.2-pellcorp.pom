@@ -136,12 +136,12 @@
     <dependencies>
 
         <!-- Testing -->
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.10</version>
         </dependency>
+        
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
@@ -383,7 +383,20 @@
             <groupId>net.sourceforge.htmlunit</groupId>
             <artifactId>htmlunit</artifactId>
             <version>2.7</version>
+            <exclusions>
+            	<exclusion>
+            		<artifactId>xml-apis</artifactId>
+            		<groupId>xml-apis</groupId>
+            	</exclusion>
+            </exclusions>
         </dependency>
+        
+        <dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		
         <dependency>
             <groupId>org.w3c.css</groupId>
             <artifactId>sac</artifactId>
@@ -483,6 +496,10 @@
                 <exclusion>
                     <artifactId>xercesImpl</artifactId>
                     <groupId>xerces</groupId>
+                </exclusion>
+                <exclusion>
+                	<artifactId>xml-apis</artifactId>
+                	<groupId>xml-apis</groupId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -611,16 +628,26 @@
             <artifactId>xmlsec</artifactId>
             <version>1.4.5</version>
         </dependency>
+        
+        <!-- 
         <dependency>
             <groupId>org.apache.xerces</groupId>
             <artifactId>xml-apis</artifactId>
             <version>2.9.1</version>
         </dependency>
+         -->
+         
         <dependency>
             <groupId>xalan</groupId>
             <artifactId>serializer</artifactId>
             <version>2.7.1</version>
             <type>jar</type>
+            <exclusions>
+            	<exclusion>
+            		<artifactId>xml-apis</artifactId>
+            		<groupId>xml-apis</groupId>
+            	</exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>gnu.cajo</groupId>
@@ -636,17 +663,18 @@
             <groupId>org.apache.ws.commons.util</groupId>
             <artifactId>ws-commons-util</artifactId>
             <version>1.0.2</version>
+            <exclusions>
+            	<exclusion>
+            		<artifactId>xml-apis</artifactId>
+            		<groupId>xml-apis</groupId>
+            	</exclusion>
+            </exclusions>
         </dependency>
 
 
 
         <!-- TODO Not sure if thease are needed -->
 
-        <dependency>
-            <groupId>xml-apis</groupId>
-            <artifactId>xml-apis</artifactId>
-            <version>1.0.b2</version>
-        </dependency>
 
         <!--  old http client needed by some 3rd party components -->
 
