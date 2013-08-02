@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>au.com.alexooi.mojos.advent</groupId>
-  <artifactId>mojo</artifactId>
+  <artifactId>api</artifactId>
   <versioning>
-    <latest>1.6.5</latest>
     <release>1.6.5</release>
     <versions>
-      <version>1.6.1</version>
-      <version>1.6.2</version>
-      <version>1.6.3</version>
       <version>1.6.4</version>
       <version>1.6.5</version>
     </versions>
-    <lastUpdated>20130730032828</lastUpdated>
+    <lastUpdated>20130730032820</lastUpdated>
   </versioning>
 </metadata>
