@@ -3,10 +3,11 @@
   <groupId>com.smartbear.soapui</groupId>
   <artifactId>soapui-installer</artifactId>
   <versioning>
-    <release>4.5.2-pellcorp</release>
+    <release>4.5.3-pellcorp</release>
     <versions>
       <version>4.5.2-pellcorp</version>
+      <version>4.5.3-pellcorp</version>
     </versions>
-    <lastUpdated>20130725104039</lastUpdated>
+    <lastUpdated>20130830065650</lastUpdated>
   </versioning>
 </metadata>
