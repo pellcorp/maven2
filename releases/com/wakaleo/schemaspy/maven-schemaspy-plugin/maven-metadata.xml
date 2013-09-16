@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.wakaleo.schemaspy</groupId>
+  <artifactId>maven-schemaspy-plugin</artifactId>
+  <versioning>
+    <latest>5.0.4-pellcorp</latest>
+    <release>5.0.4-pellcorp</release>
+    <versions>
+      <version>5.0.4-pellcorp</version>
+    </versions>
+    <lastUpdated>20130916031403</lastUpdated>
+  </versioning>
+</metadata>
