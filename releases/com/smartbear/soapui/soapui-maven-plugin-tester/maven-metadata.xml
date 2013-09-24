@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.smartbear.soapui</groupId>
+  <artifactId>soapui-maven-plugin-tester</artifactId>
+  <versioning>
+    <release>4.6.0-pellcorp</release>
+    <versions>
+      <version>4.6.0-pellcorp</version>
+    </versions>
+    <lastUpdated>20130924124903</lastUpdated>
+  </versioning>
+</metadata>

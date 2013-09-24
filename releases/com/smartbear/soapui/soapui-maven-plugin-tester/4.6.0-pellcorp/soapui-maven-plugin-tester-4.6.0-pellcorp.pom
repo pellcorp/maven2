@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<!-- TODO Extend with better tests -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.smartbear.soapui</groupId>
+    <artifactId>soapui-maven-plugin-tester</artifactId>
+    <name>soapUI Maven plugin tester</name>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.smartbear.soapui</groupId>
+        <artifactId>soapui-project</artifactId>
+        <version>4.6.0-pellcorp</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <mockServerPort>9090</mockServerPort>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.smartbear.soapui</groupId>
+                <artifactId>maven-soapui-plugin</artifactId>
+                <version>${project.parent.version}</version>
+                <configuration>
+                    <projectFile>${project.basedir}/src/main/soapui/test-soapui-project.xml</projectFile>
+                    <soapuiProperties>
+                      <property>
+                          <name>soapui.logroot</name>
+                          <value>${project.build.directory}/soapui/logs/</value>
+                      </property>
+                    </soapuiProperties>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>soapui-mock</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>mock</goal>
+                        </goals>
+                        <configuration>
+                            <noBlock>true</noBlock>
+                            <port>${mockServerPort}</port>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>soapui-test</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                        <configuration>
+                            <exportAll>true</exportAll>
+                            <host>localhost:${mockServerPort}</host>
+                            <junitReport>true</junitReport>
+                            <outputFolder>${project.build.directory}/soapui/output</outputFolder>
+                            <printReport>true</printReport>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
