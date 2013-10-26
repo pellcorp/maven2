@@ -4,7 +4,7 @@
     <plugin>
       <name>soapUI Maven plugin</name>
       <prefix>soapui</prefix>
-      <artifactId>maven-soapui-plugin</artifactId>
+      <artifactId>soapui-maven-plugin</artifactId>
     </plugin>
   </plugins>
 </metadata>

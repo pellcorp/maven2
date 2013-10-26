@@ -3,12 +3,10 @@
   <groupId>com.smartbear.soapui</groupId>
   <artifactId>soapui</artifactId>
   <versioning>
-    <release>4.6.0-pellcorp</release>
+    <release>4.6.1-pellcorp</release>
     <versions>
-      <version>4.5.2-pellcorp</version>
-      <version>4.5.3-pellcorp</version>
-      <version>4.6.0-pellcorp</version>
+      <version>4.6.1-pellcorp</version>
     </versions>
-    <lastUpdated>20130924124845</lastUpdated>
+    <lastUpdated>20131026225152</lastUpdated>
   </versioning>
 </metadata>
