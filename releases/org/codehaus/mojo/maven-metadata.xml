@@ -11,5 +11,10 @@
       <prefix>nsis</prefix>
       <artifactId>nsis-maven-plugin</artifactId>
     </plugin>
+    <plugin>
+      <name>Maven GWT Plugin</name>
+      <prefix>gwt</prefix>
+      <artifactId>gwt-maven-plugin</artifactId>
+    </plugin>
   </plugins>
 </metadata>
