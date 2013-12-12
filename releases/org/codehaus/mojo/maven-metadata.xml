@@ -16,5 +16,10 @@
       <prefix>gwt</prefix>
       <artifactId>gwt-maven-plugin</artifactId>
     </plugin>
+    <plugin>
+      <name>Properties Maven Plugin</name>
+      <prefix>properties</prefix>
+      <artifactId>properties-maven-plugin</artifactId>
+    </plugin>
   </plugins>
 </metadata>
