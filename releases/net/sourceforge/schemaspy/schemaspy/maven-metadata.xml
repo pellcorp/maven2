@@ -3,11 +3,12 @@
   <groupId>net.sourceforge.schemaspy</groupId>
   <artifactId>schemaspy</artifactId>
   <versioning>
-    <release>5.0.1-pellcorp</release>
+    <release>5.0.2-pellcorp</release>
     <versions>
       <version>5.0.0</version>
       <version>5.0.1-pellcorp</version>
+      <version>5.0.2-pellcorp</version>
     </versions>
-    <lastUpdated>20130916053615</lastUpdated>
+    <lastUpdated>20140716005830</lastUpdated>
   </versioning>
 </metadata>
