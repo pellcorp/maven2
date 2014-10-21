@@ -3,7 +3,7 @@
   <groupId>com.smartbear.soapui</groupId>
   <artifactId>soapui-maven-plugin-tester</artifactId>
   <versioning>
-    <release>5.1.2_1-pellcorp</release>
+    <release>5.1.2_2-pellcorp</release>
     <versions>
       <version>4.6.1-pellcorp</version>
       <version>4.6.4-pellcorp</version>
@@ -12,7 +12,8 @@
       <version>5.0.0-pellcorp</version>
       <version>5.1.2-pellcorp</version>
       <version>5.1.2_1-pellcorp</version>
+      <version>5.1.2_2-pellcorp</version>
     </versions>
-    <lastUpdated>20141017032246</lastUpdated>
+    <lastUpdated>20141021005747</lastUpdated>
   </versioning>
 </metadata>
