@@ -3,8 +3,8 @@
   <groupId>com.smartbear.soapui</groupId>
   <artifactId>soapui-maven-plugin</artifactId>
   <versioning>
-    <latest>5.1.2_6-pellcorp</latest>
-    <release>5.1.2_6-pellcorp</release>
+    <latest>5.1.2_7-pellcorp</latest>
+    <release>5.1.2_7-pellcorp</release>
     <versions>
       <version>4.6.1-pellcorp</version>
       <version>4.6.4-pellcorp</version>
@@ -18,7 +18,8 @@
       <version>5.1.2_4-pellcorp</version>
       <version>5.1.2_5-pellcorp</version>
       <version>5.1.2_6-pellcorp</version>
+      <version>5.1.2_7-pellcorp</version>
     </versions>
-    <lastUpdated>20141210025144</lastUpdated>
+    <lastUpdated>20141210045301</lastUpdated>
   </versioning>
 </metadata>
