@@ -3,13 +3,14 @@
   <groupId>org.codehaus.mojo</groupId>
   <artifactId>gwt-maven-plugin</artifactId>
   <versioning>
-    <latest>2.6.0-pellcorp</latest>
-    <release>2.6.0-pellcorp</release>
+    <latest>2.7.0-pellcorp</latest>
+    <release>2.7.0-pellcorp</release>
     <versions>
       <version>2.5.1-pellcorp</version>
       <version>2.5.1-2-pellcorp</version>
       <version>2.6.0-pellcorp</version>
+      <version>2.7.0-pellcorp</version>
     </versions>
-    <lastUpdated>20140304232632</lastUpdated>
+    <lastUpdated>20150122003119</lastUpdated>
   </versioning>
 </metadata>
