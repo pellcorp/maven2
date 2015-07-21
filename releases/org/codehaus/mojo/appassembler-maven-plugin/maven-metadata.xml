@@ -3,11 +3,12 @@
   <groupId>org.codehaus.mojo</groupId>
   <artifactId>appassembler-maven-plugin</artifactId>
   <versioning>
-    <latest>1.3.2-pellcorp</latest>
-    <release>1.3.2-pellcorp</release>
+    <latest>1.3.3-pellcorp</latest>
+    <release>1.3.3-pellcorp</release>
     <versions>
       <version>1.3.2-pellcorp</version>
+      <version>1.3.3-pellcorp</version>
     </versions>
-    <lastUpdated>20141125005929</lastUpdated>
+    <lastUpdated>20150721152042</lastUpdated>
   </versioning>
 </metadata>
