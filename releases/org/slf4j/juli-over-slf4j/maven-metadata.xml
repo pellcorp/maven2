@@ -3,10 +3,11 @@
   <groupId>org.slf4j</groupId>
   <artifactId>juli-over-slf4j</artifactId>
   <versioning>
-    <release>1.6.1</release>
+    <release>1.7.12</release>
     <versions>
       <version>1.6.1</version>
+      <version>1.7.12</version>
     </versions>
-    <lastUpdated>20130726043953</lastUpdated>
+    <lastUpdated>20150806004627</lastUpdated>
   </versioning>
 </metadata>
