@@ -3,11 +3,12 @@
   <groupId>org.codehaus.mojo</groupId>
   <artifactId>nsis-maven-plugin</artifactId>
   <versioning>
-    <latest>1.0-alpha-2-pellcorp</latest>
-    <release>1.0-alpha-2-pellcorp</release>
+    <latest>1.0-alpha-3-pellcorp</latest>
+    <release>1.0-alpha-3-pellcorp</release>
     <versions>
       <version>1.0-alpha-2-pellcorp</version>
+      <version>1.0-alpha-3-pellcorp</version>
     </versions>
-    <lastUpdated>20130724122745</lastUpdated>
+    <lastUpdated>20150827074707</lastUpdated>
   </versioning>
 </metadata>
