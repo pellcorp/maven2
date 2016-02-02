@@ -6,5 +6,10 @@
       <prefix>cobertura</prefix>
       <artifactId>cobertura-maven-plugin</artifactId>
     </plugin>
+    <plugin>
+      <name>Eclipse Maven Repo Plugin</name>
+      <prefix>eclipse-repo</prefix>
+      <artifactId>maven-eclipse-repo-plugin</artifactId>
+    </plugin>
   </plugins>
 </metadata>
