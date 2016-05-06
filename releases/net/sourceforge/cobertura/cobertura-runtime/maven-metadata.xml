@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>net.sourceforge.cobertura</groupId>
+  <artifactId>cobertura-runtime</artifactId>
+  <versioning>
+    <release>2.1.1-pellcorp</release>
+    <versions>
+      <version>2.1.1-pellcorp</version>
+    </versions>
+    <lastUpdated>20160505032717</lastUpdated>
+  </versioning>
+</metadata>
