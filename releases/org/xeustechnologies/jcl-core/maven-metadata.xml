@@ -3,10 +3,11 @@
   <groupId>org.xeustechnologies</groupId>
   <artifactId>jcl-core</artifactId>
   <versioning>
-    <release>2.7-pellcorp</release>
+    <release>2.4-pellcorp</release>
     <versions>
       <version>2.7-pellcorp</version>
+      <version>2.4-pellcorp</version>
     </versions>
-    <lastUpdated>20160506085422</lastUpdated>
+    <lastUpdated>20160506125234</lastUpdated>
   </versioning>
 </metadata>

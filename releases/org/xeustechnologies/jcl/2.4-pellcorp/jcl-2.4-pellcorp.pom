@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.xeustechnologies</groupId>
+	<artifactId>jcl</artifactId>
+	<name>Jar Class Loader</name>
+	<url>http://jcloader.sourceforge.net
+	</url>
+	<version>2.4-pellcorp</version>
+	<packaging>pom</packaging>
+	<description>Jar Class Loader</description>
+
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>5</version>
+	</parent>
+
+	<modules>
+		<module>test-jcl</module>
+		<module>core</module>
+		<module>spring</module>
+		<module>test-web</module>
+	</modules>
+
+	<properties>
+		<test-jar-file>test-jcl.jar</test-jar-file>
+		<skipTest>false</skipTest>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<developers>
+		<developer>
+			<id>kzafar</id>
+			<name>Kamran Zafar</name>
+			<email>kamran@kamranzafar.org
+			</email>
+			<organization>Kamran Zafar</organization>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License</name>
+			<url>${basedir}/src/main/resources/LICENSE.txt
+			</url>
+		</license>
+	</licenses>
+	<scm>
+		<connection>
+			scm:svn:https://jcloader.svn.sourceforge.net/svnroot/jcloader/trunk/JCL2
+		</connection>
+		<developerConnection>
+			scm:svn:https://jcloader.svn.sourceforge.net/svnroot/jcloader/trunk/JCL2
+		</developerConnection>
+		<url>https://jcloader.svn.sourceforge.net/svnroot/jcloader/trunk/JCL2
+		</url>
+	</scm>
+	<issueManagement>
+		<system>sourceforge</system>
+		<url>http://sourceforge.net/tracker/?group_id=177055
+		</url>
+	</issueManagement>
+	
+<distributionManagement>
+		<repository>
+			<id>repo</id>
+			<url>${maven.repo.dir}/releases</url>
+		</repository>
+	</distributionManagement>
+	<mailingLists>
+		<mailingList>
+			<name>JCL Development Mailing list</name>
+			<subscribe>
+				http://lists.sourceforge.net/mailman/listinfo/jcloader-development
+			</subscribe>
+			<unsubscribe>
+				http://lists.sourceforge.net/mailman/listinfo/jcloader-development
+			</unsubscribe>
+			<archive>
+				http://sourceforge.net/mailarchive/forum.php?forum_name=jcloader-development
+			</archive>
+			<post>jcloader-development@lists.sourceforge.net
+			</post>
+		</mailingList>
+		<mailingList>
+			<name>JCL User Mailing list</name>
+			<subscribe>
+				http://lists.sourceforge.net/mailman/listinfo/jcloader-users
+			</subscribe>
+			<unsubscribe>
+				http://lists.sourceforge.net/mailman/listinfo/jcloader-users
+			</unsubscribe>
+			<archive>
+				http://sourceforge.net/mailarchive/forum.php?forum_name=jcloader-users
+			</archive>
+			<post>jcloader-users@lists.sourceforge.net
+			</post>
+		</mailingList>
+	</mailingLists>
+	<organization>
+		<name>Kamran Zafar</name>
+		<url>http://kamranzafar.org</url>
+	</organization>
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ssh-external</artifactId>
+				<version>1.0-beta-6</version>
+			</extension>
+		</extensions>
+		<plugins>
+			<!-- plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-gpg-plugin</artifactId> 
+				<executions> <execution> <id>sign-artifacts</id> <phase>verify</phase> <goals> 
+				<goal>sign</goal> </goals> </execution> </executions> </plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin
+                </artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<reporting>
+		<plugins>
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<aggregate>true</aggregate>
+					<excludePackageNames>org.xeustechnologies.jcl.test</excludePackageNames>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-report-plugin
+				</artifactId>
+				<version>2.4.3</version>
+				<configuration>
+					<linkXRef>true</linkXRef>
+					<reportsDirectories>
+						<reportsDirectory>
+							${basedir}/core/target/surefire-reports
+						</reportsDirectory>
+						<reportsDirectory>${basedir}/spring/target/surefire-reports
+						</reportsDirectory>
+					</reportsDirectories>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jxr-maven-plugin</artifactId>
+				<configuration>
+					<aggregate>true</aggregate>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>taglist-maven-plugin</artifactId>
+				<configuration>
+					<tags>
+						<tag>TODO</tag>
+						<tag>FIXME</tag>
+						<tag>@todo</tag>
+						<tag>@deprecated</tag>
+					</tags>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>changes-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-changes-plugin</artifactId>
+				<inherited>false</inherited>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>changes-report</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+				<configuration>
+					<issueLinkTemplate>http://sourceforge.net/support/tracker.php?aid=%ISSUE% </issueLinkTemplate>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<configuration>
+					<generateReports>false</generateReports>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.objenesis</groupId>
+			<artifactId>objenesis</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>2.2</version>
+		</dependency>
+	</dependencies>
+
+</project>
