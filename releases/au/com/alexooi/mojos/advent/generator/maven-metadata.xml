@@ -3,7 +3,7 @@
   <groupId>au.com.alexooi.mojos.advent</groupId>
   <artifactId>generator</artifactId>
   <versioning>
-    <release>1.6.9_2</release>
+    <release>1.6.9_3</release>
     <versions>
       <version>1.6.4</version>
       <version>1.6.5</version>
@@ -13,7 +13,8 @@
       <version>1.6.9</version>
       <version>1.6.9_1</version>
       <version>1.6.9_2</version>
+      <version>1.6.9_3</version>
     </versions>
-    <lastUpdated>20170224072919</lastUpdated>
+    <lastUpdated>20170224074145</lastUpdated>
   </versioning>
 </metadata>
