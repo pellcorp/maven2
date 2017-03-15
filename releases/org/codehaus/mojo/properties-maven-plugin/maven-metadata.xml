@@ -3,13 +3,14 @@
   <groupId>org.codehaus.mojo</groupId>
   <artifactId>properties-maven-plugin</artifactId>
   <versioning>
-    <latest>1.0-alpha-4-pellcorp</latest>
-    <release>1.0-alpha-4-pellcorp</release>
+    <latest>1.0-alpha-5-pellcorp</latest>
+    <release>1.0-alpha-5-pellcorp</release>
     <versions>
       <version>1.0-alpha-2-pellcorp</version>
       <version>1.0-alpha-3-pellcorp</version>
       <version>1.0-alpha-4-pellcorp</version>
+      <version>1.0-alpha-5-pellcorp</version>
     </versions>
-    <lastUpdated>20170221082128</lastUpdated>
+    <lastUpdated>20170315094827</lastUpdated>
   </versioning>
 </metadata>
