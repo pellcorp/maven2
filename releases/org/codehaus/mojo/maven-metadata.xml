@@ -26,5 +26,10 @@
       <prefix>appassembler</prefix>
       <artifactId>appassembler-maven-plugin</artifactId>
     </plugin>
+    <plugin>
+      <name>Maven Wagon plugin</name>
+      <prefix>wagon</prefix>
+      <artifactId>wagon-maven-plugin</artifactId>
+    </plugin>
   </plugins>
 </metadata>
