@@ -3,10 +3,11 @@
   <groupId>com.testautomationguru.pdfutil</groupId>
   <artifactId>pdf-util</artifactId>
   <versioning>
-    <release>0.0.2-pellcorp</release>
+    <release>0.0.3-pellcorp</release>
     <versions>
       <version>0.0.2-pellcorp</version>
+      <version>0.0.3-pellcorp</version>
     </versions>
-    <lastUpdated>20171013052153</lastUpdated>
+    <lastUpdated>20171013054613</lastUpdated>
   </versioning>
 </metadata>
