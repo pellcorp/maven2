@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.testautomationguru.pdfutil</groupId>
+  <artifactId>pdf-util</artifactId>
+  <versioning>
+    <release>0.0.2-pellcorp</release>
+    <versions>
+      <version>0.0.2-pellcorp</version>
+    </versions>
+    <lastUpdated>20171013052153</lastUpdated>
+  </versioning>
+</metadata>
