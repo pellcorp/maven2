@@ -3,14 +3,15 @@
   <groupId>com.wakaleo.schemaspy</groupId>
   <artifactId>maven-schemaspy-plugin</artifactId>
   <versioning>
-    <latest>5.0.7-pellcorp</latest>
-    <release>5.0.7-pellcorp</release>
+    <latest>5.0.8-pellcorp</latest>
+    <release>5.0.8-pellcorp</release>
     <versions>
       <version>5.0.4-pellcorp</version>
       <version>5.0.5-pellcorp</version>
       <version>5.0.6-pellcorp</version>
       <version>5.0.7-pellcorp</version>
+      <version>5.0.8-pellcorp</version>
     </versions>
-    <lastUpdated>20140716005703</lastUpdated>
+    <lastUpdated>20171018042342</lastUpdated>
   </versioning>
 </metadata>
